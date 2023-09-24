@@ -7,25 +7,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="part1"></div>
+    
+
+    
 
     <header>
-      <div class="logo">
+      <div class="wrap-logo">
         <img id="logo" src="cc08783e4379311ae922f51f189a38c8.jpg" alt=" " />
       </div>
-      <h1 class="text-white">Персональный сайт Мирошниченко Олега</h1>
-      <div class="top-menu">
-        <ul>
-          <li><a class="clickMenu" href="#links">Список гиперссылок</a></li>
-          <li><a href="#table">Таблица</a></li>
-          <li><a href="#form">Форма</a></li>
-        </ul>
-      </div>
+      <h5>Персональный сайт Мирошниченко Олега</h5>
+      <nav>
+        
+        <a href="#links">Список гиперссылок</a>
+        <a href="#table">Таблица</a>
+        <a href="#form">Форма</a>
+      </nav>
     </header>
+
+
+
 
     <div class="content">
       <ul>
-        <li>Список ссылок</li>
+        <li id="links">Список ссылок</li>
         <li>
           <a href="http://www.kubsu.ru/"
             >абсолютная гиперссылка на главную страницу сайта kubsu.ru</a
@@ -77,7 +81,6 @@
           >
         </li>
       </ul>
-  
       <p>
         Если человек тебе сделал зло, дай ему конфетку. Он тебе - зло, ты ему -
         конфетку. И так до тех пор, пока у этой твари не разовьется
@@ -186,10 +189,29 @@
       </ul>
   
       <a href="ftp://oleg:12345678@poffi.net/proverka/log.txt">
-        ссылку на файл на сервере FTP с авторизацией</a
-      >
-      <p id="form">Форма</p>
+        ссылку на файл на сервере FTP с авторизацией</a>
+
+
+
+
+
+        
+      
+
+
+
+
+
+
+
+
+
+
+
+        
+      
       <form action="/" method="POST">
+        <p id="form">Форма</p>
         <label>
           Фамилия Имя Отчество:<br />
           <input
@@ -223,7 +245,7 @@
           Дата рождения:<br />
           <input name="field-date" placeholder="" type="date" required="" /> </label
         ><br />
-
+        </di>
         Пол:<br />
         <label
           ><input
@@ -239,8 +261,8 @@
           ><input type="radio" name="radio-group-1" placeholder="" required="" />
           Женский</label
         ><br />
-        <label> Любимый язык программирования:</label>
-        <br />
+        <label> Любимый язык программирования:<br>
+        
         <select name="field-name-4[]" multiple="multiple" required="">
           <option value="Значение1" >Pascal</option>
           <option value="Значение2"  ">C</option>
@@ -255,6 +277,7 @@
           <option value="Значение11"  ">Scala</option>
         </select>
         <br />
+      </label>
         <label>
           Биография:<br />
           <textarea name="field-name-2" placeholder="Напишите о себе" required=""></textarea></label
@@ -264,14 +287,19 @@
           ><input type="checkbox"  name="check-1" required=""/> ознакомлен
           (а)</label
         ><br />
-        <input type="submit" value="Сохранить" required=""/>
+        <button class="custom-btn btn-1" required="" >Сохранить</button>
+        
       </form>
 
+    </div>
+
+
+    
       <table id="table">
         <caption>
           Заголовок над таблицей
         </caption>
-        <tbody>
+       <tbody>
           <tr>
             <td>Значение 1</td>
             <td>Значение 2</td>
@@ -309,9 +337,16 @@
           </tr>
         </tbody>
       </table>
-    </div>
+    
+    
 
 
+
+
+
+
+
+      
 
 
 
