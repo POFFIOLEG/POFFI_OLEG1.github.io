@@ -3,6 +3,12 @@
 
 }
 
+@media (min-width) {
+    .top-menu {
+        left: 0;
+    }
+
+}
 
 body {
     background: #585858;
