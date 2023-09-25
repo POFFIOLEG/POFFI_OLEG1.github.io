@@ -79,6 +79,7 @@ nav {
         justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
+        order: 3;
     }
 }
 
@@ -118,7 +119,7 @@ nav {
     color: #05b0ff;
 }
 
-table {
+.table {
     display: flex;
     border-radius: 5px;
     font-weight: normal;
@@ -175,12 +176,24 @@ tr:nth-child(1) {
 
 @media screen and (max-width: 600px) {
     table {
-        border: 0;
+        display: flex;
+        border-radius: 5px;
+        font-weight: normal;
+        border-collapse: collapse;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+        text-indent: inherit;
+        border-spacing: 2px;
+        order: 1;
+        flex-wrap: wrap;
+        align-items: center;
     }
-
 }
 
-form {
+
+
+.form {
     display: flex;
     border-radius: 5px;
     font-weight: normal;
@@ -192,13 +205,14 @@ form {
     text-indent: inherit;
     border-spacing: 2px;
     color: #ffffff;
+    align-items: flex-start;
 }
 
-form label {
+.form label {
     align-content: center;
 }
 
-form p {
+.form p {
     text-align: center;
 }
 
@@ -261,4 +275,62 @@ input[type="checkbox" i] {
 .btn-1:hover {
     background: rgb(0, 3, 255);
     background: linear-gradient(0deg, rgba(0, 3, 255, 1) 0%, rgba(2, 126, 251, 1) 100%);
+}
+
+@media screen and (max-width:600px) {
+    .form {
+        display: flex;
+        border-radius: 5px;
+        font-weight: normal;
+        border-collapse: collapse;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: center;
+        text-indent: inherit;
+        border-spacing: 2px;
+        color: #ffffff;
+        align-items: stretch;
+        order: 1;
+    }
+}
+
+.wrap {
+
+    color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+}
+
+.box {
+    width: 100%;
+
+}
+
+.box a,
+li {
+    color: #05b0ff;
+}
+
+.box ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: left;
+}
+
+@media screen and (max-width: 600px) {
+    .wrap {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+        align-content: stretch;
+        order: 2;
+        justify-content: center;
+    }
 }

@@ -27,179 +27,174 @@
 
 
 
-    <div class="content">
-      <ul>
-        <li id="links">Список ссылок</li>
-        <li>
-          <a href="http://www.kubsu.ru/"
-            >абсолютная гиперссылка на главную страницу сайта kubsu.ru</a
-          >
-          <p></p>
-        </li>
-        <li>
-          <a href="https://www.kubsu.ru/">
-            абсолютная гиперссылка на главную страницу сайта kubsu.ru в протоколе
-            https</a
-          >
-        </li>
-        <li>
-          <a id="photo" href="https://www.kubsu.ru/">
-            <img src="rt.jpg" width="50" height="50" alt=""
-          /></a>
-        </li>
-        <li>
-          <a href="/web1.html"> сокращенная ссылка на внутреннюю страницу</a>
-        </li>
-        <li>
-          <a href="/"> сокращенная ссылка на главную страницу</a>
-        </li>
-        <li><a href="#photo">Назад</a></li>
-        <li>
-          <a href="https://www.google.com/?a=kubsu&b=kubsu&c=kubsu">
-            ссылка с тремя параметрами в URL</a
-          >
-        </li>
-        <li>
-          <a href="http://google.com?id=part1">ссылку с параметром id в URL</a>
-        </li>
-        <li>
-          <a href="./index.html"> относительную на страницу в текущем каталоге</a>
-        </li>
-        <li>
-          <a href="./about/index2.html">
-            относительную на страницу в каталоге about</a
-          >
-        </li>
-        <li>
-          <a href="../web.html">
-            относительную на страницу в каталоге уровнем выше текущего</a
-          >
-        </li>
-        <li>
-          <a href="../../web1.html">
-            относительную на страницу в каталоге двумя уровнями выше</a
-          >
-        </li>
-      </ul>
-      <p>
-        Если человек тебе сделал зло, дай ему конфетку. Он тебе - зло, ты ему -
-        конфетку. И так до тех пор, пока у этой твари не разовьется
-        <a href="https://ru.wikipedia.org/wiki/Сахарный_диабет"
-          >сахарный диабет.</a
-        >
-      </p>
-      <ul>
-        <li>
-          <a
-            href="https://ru.wikipedia.org/wiki/%D0%94%D1%83%D0%BB%D0%BE%D0%B2%D0%BE"
-            >ссылку на фрагмент страницы стороннего сайта</a
-          >
-        </li>
-  
-        <li>
-          <map name="test">
-            <area
-              shape="rect"
-              coords="25,25,125,125"
-              shape="circle"
-              coords="25,25,5"
-              href="https://memchik.ru/show/5b0404cfb1c7e302424e5be7?page=5"
-              target="_blank"
-              alt="HTML"
-            />
-          </map>
-          <map name="test">
-            <area
-              shape="circle"
-              coords="25,25,5"
-              href="https://memchik.ru/show/5b0404cfb1c7e302424e5be7?page=5"
-              target="_blank"
-              alt="HTML"
-            />
-          </map>
-          <img usemap="#test" src="rt.jpg" width="350" height="150" alt="" />
-        </li>
-        <li>
-          <a href="">Пустая ссылка</a>
-        </li>
-        <li><a title="ссылка без href">Ссылка без href</a></li>
-        <li>
-          <a href="https://ru.wikipedia.org/wiki/Гурзуф" rel="nofollow">
-            по которой запрещен переходпоисковикам</a
-          >
-        </li>
-      </ul>
-  
-      <a href="http://google.com" rel="nofollow"
-        ><!--noindex-->Запрещен для индексации поисковикам<!--/noindex--></a
-      >
-  
-      <ul>
-        <li>
-          Навигация Wikipedia
-          <ol>
-            <li>
-              <a
-                href="https://ru.wikipedia.org/wiki/Заглавная_страница"
-                title="Заглавная 
-      страница"
-                >Заглавная страница</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://ru.wikipedia.org/wiki/Википедия:Поиск_по_категориям"
-                title="Рубрикация"
-                >Рубрикация</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://ru.wikipedia.org/wiki/Википедия:Алфавитный_указатель"
-                title="Указатель А-
-      Я"
-                >Указатель А-Я</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://ru.wikipedia.org/wiki/Википедия:Избранные_статьи"
-                title="Избранные 
-      статьи"
-                >Избранные статьи</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://ru.wikipedia.org/wiki/Портал:Текущие_события"
-                title="Текущие 
-      события"
-                >Текущие события</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://ru.wikipedia.org/wiki/Википедия:Форум"
-                title="Форум"
-                >Форум</a
-              >
-            </li>
-          </ol>
-        </li>
-      </ul>
-  
-      <a href="ftp://oleg:12345678@poffi.net/proverka/log.txt">
-        ссылку на файл на сервере FTP с авторизацией</a>
+    
+     <div class="wrap">
+      <div class="box">
+        <ul>
+          <p id="links">Список ссылок</p>
+          <li>
+            <a href="http://www.kubsu.ru/"
+              >абсолютная гиперссылка на главную страницу сайта kubsu.ru</a>
+          </li>
 
+          <li>
+            <a href="https://www.kubsu.ru/"> абсолютная гиперссылка на главную страницу сайта kubsu.ru в протоколе https</a>
+          </li>
 
+          
+            <a id="photo" href="https://www.kubsu.ru/"><img src="kosmoscilka.jpg" width="250" height="400" alt=""/></a> 
+          
 
+          <li>
+            <a href="/web1.html"> сокращенная ссылка на внутреннюю страницу</a>
+          </li>
 
+          <li>
+            <a href="/"> сокращенная ссылка на главную страницу</a>
+          </li>
 
+          <li>
+            <a href="#photo">Назад</a>
+          </li>
+
+          <li>
+            <a href="https://www.google.com/?a=kubsu&b=kubsu&c=kubsu">ссылка с тремя параметрами в URL</a>
+          </li>
+
+          <li>
+            <a href="http://google.com?id=part1">ссылку с параметром id в URL</a>
+          </li>
+
+          <li>
+            <a href="./index.html"> относительную на страницу в текущем каталоге</a>
+          </li>
+
+          <li>
+            <a href="./about/index2.html">относительную на страницу в каталоге about</a>
+          </li>
+
+          <li>
+            <a href="../web.html">относительную на страницу в каталоге уровнем выше текущего</a>
+          </li>
+
+          <li>
+            <a href="../../web1.html">относительную на страницу в каталоге двумя уровнями выше</a>
+          </li>
         
+        <p>Если человек тебе сделал зло, дай ему конфетку. Он тебе - зло, ты ему - конфетку. И так до тех пор, пока у этой твари не разовьется
+          <a href="https://ru.wikipedia.org/wiki/Сахарный_диабет">сахарный диабет.</a>
+        </p>
       
 
+        <li>
+            <a href="https://ru.wikipedia.org/wiki/%D0%94%D1%83%D0%BB%D0%BE%D0%B2%D0%BE">ссылку на фрагмент страницы стороннего сайта</a>
+        </li>
 
+        <li>
+            <map name="test">
+              <area
+                shape="rect"
+                coords="25,25,125,125"
+                shape="circle"
+                coords="25,25,5"
+                href="https://memchik.ru/show/5b0404cfb1c7e302424e5be7?page=5"
+                target="_blank"
+                alt="HTML"
+              />
+            </map>
+            <map name="test">
+              <area
+                shape="circle"
+                coords="25,25,5"
+                href="https://memchik.ru/show/5b0404cfb1c7e302424e5be7?page=5"
+                target="_blank"
+                alt="HTML"
+              />
+            </map>
+            <img usemap="#test" src="kosmosoblast.jpg" width="350" height="350" alt="" />
+          </li>
 
+          <li>
+            <a href="">Пустая ссылка</a>
+          </li>
+
+          <li>
+            <a title="ссылка без href">Ссылка без href</a>
+          </li>
+
+          <li>
+            <a href="https://ru.wikipedia.org/wiki/Гурзуф" rel="nofollow">по которой запрещен переходпоисковикам</a>
+          </li>
+        
+          <li>
+        <a href="http://google.com" rel="nofollow"><!--noindex-->Запрещен для индексации поисковикам<!--/noindex--></a>
+          </li>
+        <p>Навигация Wikipedia</p>
+          
+            
+            <ol>
+              <li>
+                <a
+                  href="https://ru.wikipedia.org/wiki/Заглавная_страница"
+                  title="Заглавная 
+        страница"
+                  >Заглавная страница</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://ru.wikipedia.org/wiki/Википедия:Поиск_по_категориям"
+                  title="Рубрикация"
+                  >Рубрикация</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://ru.wikipedia.org/wiki/Википедия:Алфавитный_указатель"
+                  title="Указатель А-
+        Я"
+                  >Указатель А-Я</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://ru.wikipedia.org/wiki/Википедия:Избранные_статьи"
+                  title="Избранные 
+        статьи"
+                  >Избранные статьи</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://ru.wikipedia.org/wiki/Портал:Текущие_события"
+                  title="Текущие 
+        события"
+                  >Текущие события</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="https://ru.wikipedia.org/wiki/Википедия:Форум"
+                  title="Форум"
+                  >Форум</a
+                >
+              </li>
+
+            </ol>
+        
+        
+    <li>
+        <a href="ftp://oleg:12345678@poffi.net/proverka/log.txt">ссылку на файл на сервере FTP с авторизацией</a>
+  </li>
+
+        </ul>
+      </div>
+    </div>
 
 
 
@@ -210,7 +205,7 @@
 
         
       
-      <form action="/" method="POST">
+      <form action="/" method="POST" class="form">
         <p id="form">Форма</p>
         <label>
           Фамилия Имя Отчество:<br />
@@ -295,7 +290,7 @@
 
 
     
-      <table id="table">
+      <table class="table"  >
         <caption>
           Заголовок над таблицей
         </caption>
